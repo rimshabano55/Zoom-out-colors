@@ -1,0 +1,24 @@
+.zoom-out-colors {
+  width: 150px;
+  height: 150px;
+  margin-left: 80px;
+  background: linear-gradient(#ff5400 0 0), linear-gradient(#ffbd00 0 0),
+    linear-gradient(#ff5400 0 0) #ed303c;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: anim 2s infinite;
+}
+@keyframes anim {
+  0% {
+    background-size: 100% 100%, 100% 100%, 100% 100%;
+  }
+  33% {
+    background-size: 0px 0px, 100% 100%, 100% 100%;
+  }
+  66% {
+    background-size: 0px 0px, 0px 0px, 100% 100%;
+  }
+  100% {
+    background-size: 0px 0px, 0px 0px, 0px 0px;
+  }
+}
